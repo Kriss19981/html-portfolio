@@ -1,37 +1,124 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+  font-size: 14px;
+  margin: 0px;
+  position: top;
+  font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(to bottom, grey, darkgrey);
+}
+img.title-image{
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+@media (min-width: 601px){
+
+div.card{
+  width: 45%;
+  display: flex;
+  
+}
+    .logo{
+      width: 200px;
+      aspect-ratio: 5/2;
+      
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p{
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    
+div.left{
+  display: inline-block;
+  float:left;
+  
+}
+div.right{
+  display: inline-block;
+}
+footer{
+  text-align: right;
+  font-size: 12px;
+  font-weight: normal;
+}
+div.card >h2{
+  margin: 20px;
+  
+    }}
+@media (max-width: 600px){
+  .logo {
+    width: 100%;
+    aspect-ratio: 5/2;
+    
+    padding: 0px;
+    margin: 0px;
+    
+  }
+  div > h1 {
+    font-size: 110px;
+    margin-top: 0px;
+  }
+  p {
+    font-size: 2em;
+    font-weight: 10;
+  }
+  h2 {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    
+  }
+  div.left{
+    display: block;
+    
+  }
+  div.right{
+    display: block;
+    
+  }
+  img.title-image{
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  footer {
+    font-size: 15px;
+    text-align: right;
+    font-weight: normal;
+  }
+    
+}
+    </style>
 </head>
-<body>
-     <h1>Kriss Portfolio</h1>
-     <h2>Im a web developer</h2>
-     <hr>
-     <a href="./public/Brithday.html"><h3>Birthday Invitaiton Project</h3> </a>
-     <br>
-     <img src="./assets/images/Birthday.png" height="400" alt=""/>>
-     <br>
-     <a href="./public/movies.html"><h3>Favorite movies</h3></a>
-     <br>
-     <img src="./assets/images/movies.png" height="400" alt="">
-     <hr>
-     <a href="./public/about.html">About Me </a><a href="./public/contact.html">| Contacts</a>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+<body>    
+<div class="main">
+  <img class="logo" src="https://picsum.photos/seed/picsum/200/300">
+  <h1>We are Creative Design Agency </h1>
+  <div class="left card"><img class="title-image" src="https://picsum.photos/seed/picsum/200/300">
+    <h2 class="card-title">Beauty</h2>
+    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare sed lacus malesuada lacinia. Sed nisl turpis, tincidunt at arcu sed, molestie pharetra risus. In rutrum justo nec quam sodales, pharetra placerat metus volutpat. Vivamus ac pretium lacus. Mauris tristique lacinia ex eget scelerisque. Aenean sed lorem ex.</p>
+  </div>
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+  <div class="right card"><img class="title-image" src="https://picsum.photos/seed/picsum/200/300">
+    <h2 class="card-title">Construction</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare sed lacus malesuada lacinia. Sed nisl turpis, tincidunt at arcu sed, molestie pharetra risus. In rutrum justo nec quam sodales, pharetra placerat metus volutpat. Vivamus ac pretium lacus. Mauris tristique lacinia ex eget scelerisque. Aenean sed lorem ex.</p>
+  </div>
+</div>
 </body>
+<footer>Create. Develop. Design</footer>
 </html>
 
