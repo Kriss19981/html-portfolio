@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <style>
-        body {
+ body {
   font-size: 14px;
   margin: 0px;
   position: top;
@@ -23,53 +23,51 @@ img.title-image{
 }
 @media (min-width: 601px){
 
-div.card{
+  div.card{
   width: 45%;
   display: flex;
   
-}
-    .logo{
+  }
+  .logo{
       width: 200px;
       aspect-ratio: 5/2;
       
-    }
-    h2 {
+  }
+  h2 {
       font-size: 25px;
-    }
-    p{
+  }
+  p{
       font-size: 14px;
       margin-left: 10px;
-    }
+      padding: 15px;
+  }
     
-div.left{
+  div.left{
   display: inline-block;
   float:left;
   
-}
-div.right{
+  }
+  div.right{
   display: inline-block;
-}
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  text-align: right;
-  font-size: 12px;
-  font-weight: normal;
-}
-div.card >h2{
-  margin: 20px;
-  
-    }}
+  }
+  footer{
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  div.card >h2{
+    margin: 20px;
+  }}
 @media (max-width: 600px){
   .logo {
     width: 100%;
     aspect-ratio: 5/2;
-    
     padding: 0px;
     margin: 0px;
-    
   }
   div > h1 {
     font-size: 110px;
@@ -85,15 +83,12 @@ div.card >h2{
     display: block;
     text-align: center;
     margin-top: 0px;
-    
   }
   div.left{
     display: block;
-    
   }
   div.right{
     display: block;
-    
   }
   img.title-image{
     display: block;
@@ -104,6 +99,7 @@ div.card >h2{
     font-size: 18px;
     text-align: right;
     font-weight: bold;
+    padding: 10px;
   }
     
 }
